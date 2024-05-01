@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+.myPage{
+	width: var(--main-width);
+	padding-bottom:90px;
+}
+
+
+.myPageDelte_info > div > input{
+	width:350px;
+	padding: 15px 10px;
+	border: 1px solid var(--border-color);
+	margin-bottom: 20px;
+	text-align: left;
+	font-size: 15px;
+}
+.myPage_button{
+  padding: 10px 20px;
+  text-align: center;
+  margin: 10px 10px;
+  font-size: 13px;
+  border-radius: 4px;
+  background-color: var(--main-btn-color);
+  color: white;
+  border: none;
+}
+.myPage_Modibutton{
+	margin-left: 230px;
+}
+.myPageDelete_button{
+	width:350px;
+	display: flex;
+	justify-content: space-between;
+}
+.myPageDetailWrap_profile{
+	width: 300px;
+	
+}
+.myPageDetailWrap_profile>img{
+	width: 200px;
+	height:200px;
+}
+.myPageDeleteWrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 80px;
+}
+.myPageDetailWrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top:60px;
+}
+.myPageDetailWrap_info, .myPageDelte_info,.myPageModifyWrap_info{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.myPageDetailWrap_info>div, .myPageDetailWrap_infoWrap, .myPageDetailWrap_myInfo,.myPageModifyWrap_info>div{
+	display: flex;
+	justify-content: flex-start;
+}
+.myPageDetailWrap_info>div>div:first-of-type {
+	width: 100px;	
+	padding: 10px 0 13px 15px;
+	font-weight: bold;
+}
+.myPageDetailWrap_info>div>div:last-of-type{
+	padding: 10px 0 13px 15px;
+}
+.myPageDetailWrap_info>div:last-of-type{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 15px;
+}
+
+
+.myPageModifyWrap_info>div{
+	line-height: 40px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.myPageModify_info_title{
+	width: 140px;
+	padding: 5px 0 8px 10px;
+	font-weight: bold;
+}
+.myPageModify_info_content{
+	padding:7px 15px;	
+}
+.myPageModify_info_content>input{
+	padding:7px 15px;	
+}
+
+.myPageDetailWrap_info>div:last-of-type>input{
+	margin-right: 10px;
+}
+.myPageDetailWrap_profile>input{
+	margin-top: 15px;
+}
+
+
+
+.myPageMenu {
+	width: 1200px;
+	
+	display: flex;
+	margin-bottom: 30px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid var(--main-color);
+}
+.myPageMenu li {
+	border-right: 1px solid var(--text-cont-color);
+}
+.myPageMenu li:last-of-type{
+	border-right: none;
+}
+.myPageMenu li a {
+	font-size: 18px;
+	padding: 0 1.5rem;
+	color: var(--text-cont-color);
+	line-height: 1rem;
+}
+.myPageMenu li.active a {
+	color: var(--main-btn-color);
+	font-weight: 700;
+}
+
+.myPageNav{
+	gap: .5rem;
+	font-weight: 500;
+	padding-top: 47px;
+
+}
+
+.myPageNav{
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    width:100%;
+    font-size: .9rem;
+    line-height:20px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.myPageNav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
+
+
+
+
+

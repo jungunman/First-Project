@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+
+	.mainSection {
+		width: 100%;
+		margin: 65px auto;
+	}
+	.nick {
+		color: var(--main-btn-color);
+		font-weight: 700;
+	}
+
+	
+	.mainSection > table,
+	.mainSection > .mainContent,
+	.mainSection > .mainTableWrap,
+	.mainSection > h3
+	 {
+		width: 100%;
+		max-width: var(--main-width);
+		margin: 0 auto;
+	}
+	.mainSection > h3 {
+		font-size: 3rem;
+		color: var(--main-color);
+		position: relative;
+	    top: -2rem;
+	    font-weight: 300;
+	}
+	
+	.mainSection > .mainContent {
+		display: flex;
+		justify-content: flex-start;
+		overflow: overlay;
+		overflow-y: hidden;
+		gap: 2.5rem;
+	}
+	.mainSection > .mainContent::-webkit-scrollbar {
+	  width: 5px;
+	  height: 15px;
+	}
+	.mainSection > .mainContent::-webkit-scrollbar-thumb {
+	  background-color: rgba(212, 231, 253, 0.6);
+	  border-radius: 100px;
+	}
+	.mainSection > .mainContent > .mainItem{
+		width: 200px;
+		margin-bottom: 2rem;
+	}
+	.mainSection > .mainContent > .mainItem > a > .mainItemImg {
+		width: 200px;
+		position: relative;
+	}
+	.mainSection > .mainContent > .mainItem > a > .mainItemImg > img {
+		width: 100%;
+		height: 280px;
+		object-fit: cover;
+	}
+	.mainSection > .mainContent > .mainItem > a > .mainItemImg > .mainItemInfo {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		background-color:rgba(0,0,0,0.6);
+		backdrop-filter: blur(2px);
+		-webkit-backdrop-filter: blur(2px);
+		opacity: 0;
+		transition: .3s ease-in;
+	}
+	.mainSection > .mainContent > .mainItem > a > .mainItemImg > .mainItemInfo:hover{
+		opacity: 1;
+	}
+	.mainSection > .mainContent > .mainItem > a > .mainItemImg > .mainItemInfo > div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: .5rem;
+	}
+	.mainSection > .mainContent > .mainItem > a > .mainItemImg > .mainItemInfo img {
+		width: 30px;
+		height: 30px;
+	}
+	
+	.mainSection > .mainContent > .mainItem > a > .mainItemImg > .mainItemInfo span {
+		font-size: 1.2rem;
+		font-weight: bold;
+		color: #eee;
+	}
+	
+	.mainSection > .mainContent > .mainItem > a > .mainItemTitle,
+	.mainSection > .mainContent > .mainItem > a > .mainItemDesc {
+		margin-top: 1rem;
+	}
+	.mainSection > .mainContent > .mainItem > a > .mainItemDesc {
+		display: flex;
+		justify-content: space-between;
+		color: var(--text-title-color);
+	}
+	.mainSection > .mainContent > .mainItem > a > .mainItemTitle h5 {
+		font-size: 1rem;
+		color: var(--text-title-color);
+		font-weight:700;
+		overflow:hidden;
+      	white-space:nowrap;
+     	text-overflow:ellipsis;
+	}
+	.mainSection > .mainContent > .mainItem > a > .mainItemTitle .nick,
+	.mainSection > .mainContent > .mainItem > a > .mainItemDesc span {
+		display:block;
+		margin-top: .5rem;
+		text-align: end;
+		font-size: .8rem;
+		
+	}	
+
+	
+	#weeklyMain {
+		margin-top: 160px;
+		position: relative;
+	}
+	#weeklyMain::before{
+		content:'';
+		display:block;
+		position: absolute;
+		bottom: 100%;
+		right:0;
+		width: 31%;
+		height: 28%;
+		background-color: var(--main-color);
+		z-index: -99;
+	}
+	#weeklyMain::after{
+		content:'';
+		display:block;
+		position: absolute;
+		bottom: 100%;
+		right: 0;
+		width: 31%;
+		height: 28%;
+		background-color: #fff;
+		border-radius:  0 0 5.5rem 0;
+		z-index: -9;
+	}
+	#weeklyMain .bgBox {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 31%;
+		height: 100%;
+		background-color: var(--main-color);
+		z-index: -1;
+		border-radius: 5.5rem 0 0 5.5rem;	
+	}
+
+	#recentlyMain{
+		background-color: var(--main-btn-color); /* 메인색 */
+	}
+	#recentlyMain > h3,
+	#genreMain > h3 {
+		top: -4rem;
+	}
+	#recentlyMain > .mainContent > .mainItem > a > .mainItemTitle h5 {
+		color: var(--border-color);
+		font-weight: 400;
+	}
+	#recentlyMain > .mainContent > .mainItem > a > .mainItemTitle .nick {
+		color: var(--main-blur-color);
+	}
+
+	#genreMain {
+		position: relative;
+	}
+	#genreMain::before{
+		content:'';
+		display:block;
+		position: absolute;
+		top: 100%;
+		left:0;
+		width: 31%;
+		height: 28%;
+		background-color: var(--main-color);
+		z-index: -99;
+	}
+	#genreMain::after{
+		content:'';
+		display:block;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 31%;
+		height: 28%;
+		background-color: #fff;
+		border-radius: 6.5rem 0 0 0;
+		z-index: -9;
+	}
+	#genreMain > .bgBox {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 31%;
+		height: 100%;
+		background-color: var(--main-color);
+		z-index: -1;
+		border-radius: 0 6.5rem 6.5rem 0;
+	}
+	#genreMain > #mainGenreMenu {
+		width: 1200px; margin: 0 auto 30px;
+		justify-content: flex-end;
+		border-bottom: 1px solid var(--main-blur-color);
+	}
+	
+	
+	.mainSection > .mainTableWrap {
+		display: flex;
+		justify-content: space-between;
+	}
+	.mainSection > .mainTableWrap > .table {		
+		width: 550px;
+	    padding: 3rem 2rem;
+	    border-radius: 0 0 2rem 0;
+	    background-color: var(--main-blur-color);
+	    box-shadow: 0 0 20px rgba(0,0,0,.2);
+	}
+	
+	.mainSection > .mainTableWrap > .table > .emptyTable {
+		display: block;
+	    text-align: center;
+	    margin-top: 25%;
+	}
+
+	.mainSection > .mainTableWrap > .table > h4,
+	.mainSection > .mainTableWrap > .table > table > caption {
+		font-weight: 500;
+	    color: var(--main-btn-color);
+	    font-size: 1.2rem;
+	    margin-bottom: 1.2rem;
+	    text-align: center;
+	}
+
+	.mainSection > .mainTableWrap > .table > table {
+		width: 100%;
+		border-top: 2px solid var(--main-btn-color);
+		border-bottom: 2px solid var(--main-btn-color);
+	}
+	.mainSection > .mainTableWrap > .table > table > thead {
+		background-color: #82b4f08f;
+	}
+	.mainSection > .mainTableWrap > .table > table > tbody > tr {
+		border-top: 1px solid var(--main-btn-color);		 
+	}
+	
+	.mainSection > .mainTableWrap > .table > table th,
+	.mainSection > .mainTableWrap > .table > table td {
+		padding: .7rem .5rem; 
+		line-height: 1.5rem;	
+		text-align:center;	
+	}
+	.mainSection > .mainTableWrap > .table > table th {
+		font-weight: 700;
+	}
+	.mainSection > .mainTableWrap > .table > table > tbody > tr > td > a {
+		display: block;
+		text-indent: .5rem;
+		text-align: start;
+		overflow: hidden;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
+	}
+	.mainSection > .mainTableWrap > .table > table > tbody > tr > td > a:hover {
+		font-weight: 700;
+		color: var(--main-btn-color);
+	}
+	
+	.mainSection > .mainTableWrap > .table > a {
+		display: block;
+	    width: fit-content;
+	    margin: 1rem 0 0 auto;
+	    padding: 0.5rem 1rem;
+	    color: var(--text-cont-color);
+	    font-size: .8rem;
+	    font-weight: 700;
+	}

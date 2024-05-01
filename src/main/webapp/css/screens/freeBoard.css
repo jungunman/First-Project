@@ -1,0 +1,107 @@
+@charset "UTF-8";
+.freeboard__box{
+	width: 1200px;
+};
+
+.freeboard__list{
+	padding: 40px 0 65px;
+}
+
+
+.freeboard__listinfo{
+	width: 1200px;
+	
+		margin :10px;
+	display: flex;
+}
+
+
+.freeboard__listno{
+	width: 50px;
+	height: 50px;
+	font-size: 25px;
+
+	
+}
+.freeboard__listWrap{
+	width: 1200px;
+	border: 1px solid rgb(192, 192, 192);
+	margin :10px 0px 0px 0px;
+
+	
+	
+}
+.freeboard__title{
+	font-size: 25px;
+	width: 1200px;
+	margin: 10px;
+	display: flex;
+}
+.freeboard__titleWrqp{
+	width: 1000px;
+}
+.freeboard__info{
+	display: flex;
+	margin :10px;
+}
+.freeboard__menuba{
+	float: right;
+}
+.freeboard__content{
+	margin: 10px;
+}
+
+.freeboard__status{
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 5px;
+	background-color: var(--main-btn-color);
+	line-height: 30px;
+	margin: 10px;
+	
+
+}
+.freeboard__menuba{
+	float: right;
+	display: flex;
+	
+}
+
+.freeboard__status > a{
+	color: white;
+}
+
+.freeboard__modify--title{
+	font-size: 15px;
+	margin: 10px 10px 20px 10px;
+}
+
+.freeboard__modify--input{
+	width: 1140px;
+}
+.freeboard__modify--box{
+	width: 1200px;
+	margin: auto;
+}
+.freeboard__modify--content{
+	display: flex;
+	font-size: 15px;
+}
+freeboard__modify--textarea{
+	width: 100%;
+}
+.freeboard__modify--content2{
+	font-size: 15px;
+	margin: 10px 10px 20px 20px;
+	
+}
+.freeboard__menucen{
+	text-align: center;
+}
+
+
+
+
+

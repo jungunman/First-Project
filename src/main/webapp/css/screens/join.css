@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/*회원가입 동의*/
+.join__big {
+    margin-top: 8px;
+    padding-top: 32px;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.join__top{
+	margin:auto;
+	width: 420px;
+	margin-top:8px;
+}
+.join__title{
+	height: 40px;
+	padding-top: 10px;
+	text-align: center;
+	border: 1px solid var(--border-color);
+	background-color: var(--border-color);
+}
+.join__middle{
+	margin:auto;
+	width: 420px;
+	height: 100px;
+}
+.join__check{
+	width: 210px;
+	height: 100px;
+	padding-top:20px;
+	text-align: center;
+	border: 1px solid var(--border-color);
+	float:left;
+}
+.join__totalChk{
+	margin: 25px 0px;
+}
+.join__chklist{
+    margin-top: 15px;
+	width: 420px;
+	font-size: 14px;
+	color: var(--text-cont-color);
+	float:left;
+}
+.join__chklist > div{
+	float:left;
+	height: 40px;
+}
+.join__chk{
+	width: 350px;
+}
+.join__chk--input{
+	width:68px;
+}
+.join__chk--input> input{
+  	text-align: center;
+  	font-size: 12px;
+  	border-radius: 4px;
+  	background-color: var(--text-cont-color);
+  	color: white;
+  	border: none;
+}
+
+/*회원가입 동의에서 창 이동하게 하는 버튼*/
+.join_move{
+	text-align: center;
+}
+.join_move > a{
+	background-color: var(--border-color);
+	color: var(--main-btn-color);
+}
+.join_button{
+  padding: 10px 65px;
+  text-align: center;
+  margin: 20px 5px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: var(--main-btn-color);
+  color: white;
+  border: none;
+}
+
+/*회원가입창*/
+
+.join__write{
+	width: 100px;
+	margin-left: 10px;
+	color: var(--text-title-color);
+}
+.join__write--input{
+	width:300px;
+}
+.join__write--input > input {
+	width:100%;
+	border: none;
+	border-bottom: 1px solid var(--text-cont-color);
+}
+.join__write--input input#front,
+.join__write--input input#back {
+	width: 46.5%;
+	border: none;
+	border-bottom: 1px solid var(--text-cont-color);
+}
+.join__top > h1{
+	  text-align: center;
+	  font-size: 24px;
+	  padding: 20px 65px;
+	  font: bold;
+}

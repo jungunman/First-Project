@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+.super_top,
+header {
+	width:100%;
+	border-bottom: 1px solid var(--border-color);
+	line-height: 30px;
+}
+
+.super_top ul,
+header ul {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.super_top ul {
+	justify-content: end;
+	padding: .5rem;
+}
+.super_top ul span {
+	color: var(--text-title-color);
+}
+.super_top ul span b{
+	color: var(--main-btn-color); /* 버튼 메인색*/
+	font-weight: bold;
+}
+.super_top ul li {
+	padding: 0 1rem;
+}
+.super_top ul li a {
+	color: var(--text-cont-color);
+	font-weight: bold;
+	font-size: .8rem;
+}
+
+header {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index:999;
+}
+header ul {
+	justify-content: space-between;
+	padding: 1rem;
+}
+header ul li {
+	min-width: 120px;
+	text-align: center;
+}
+header ul li a {
+	color: var(--text-title-color);
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+
+header ul li#logo img {
+	height: 36px;
+}

@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/*문의 리스트*/
+ .inquiry__title{
+	text-decoration: none;
+	color: black; 
+}
+.inquiry_info{
+	width: 700px; 
+	margin: 20px 30px 10px;
+}
+.inquiry_title{
+	color: black;
+	margin-bottom: 14px;
+	font-size: 17px;
+	font-weight: bold;
+}
+.inquiry__list{
+	border: 1px solid #ccc;
+	margin: 10px;
+}
+.inquiry__time{
+	color: var(--text-cont-color );
+	font-size: 14px;
+}
+.inquiry__backButton{
+  	border: none;
+ 	color: white;
+ 	padding: 10px 20px;
+ 	text-decoration: none;
+ 	text-align: center;
+	margin: 4px 2px;
+	font-size: 12px;
+	border-radius: 5px;
+  	background-color: var(--main-location-color);
+}
+
+/*문의 처음 화면에 나오는 문의하기/ 문의내역 링크*/
+.inquiry_subTitle > a{
+	font-size: 18px;
+	color: var(--text-cont-color);
+	font-weight: 400;
+}
+.inquiry_subTitle.active > a{
+	color: var(--main-location-color);
+}
+/*문의 글 쓰기 텍스트*/
+.inquiry__write--input > input{
+	width: 100%;
+	height: 40px;
+}
+.inquiry__write--input > textarea{
+	width: 100%;
+	height: 300px;
+}
+/*이미지 첨부*/
+.inquiryWrite_titleWrap{
+	height: 40px;
+	display: flex;
+	margin: 10px;	
+}
+.inquiryWrite_titleWrap > input{
+	width: 100%;
+	height: 40px;
+	margin: 10px;	
+}
+
+/*운영자 답변 화면*/
+.inquiry__borad{
+	background-color: var(--main-blur-color);
+	border: 1px solid var(--border-color);
+    border-top: 3px solid var(--main-btn-color);
+    background-color: #d4e7fd3d;
+	height: 75px;
+}
+.inquiry__borad>div:first-of-type{
+	margin: 17px 25px 10px;
+}
+.inquiryDetail_contentWrap{
+	width: 100%;
+	height: 100%;
+	padding:30px;
+	border: 1px solid var(--border-color);	
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+    border-bottom: 3px solid var(--main-btn-color);
+    margin: 0px 0px 15px 0px;
+}
+.inquiry__write{
+	width: 100px;
+	margin-left: 10px;
+	margin-top: 12px;
+	color: var(--text-title-color);
+}

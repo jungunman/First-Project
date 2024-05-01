@@ -1,0 +1,174 @@
+@charset "UTF-8";
+.promotionBoard{
+	width: var(--main-width);	
+}
+
+.board__nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.board__nav > a{
+	width: 50%;
+    font-size: 25px;
+    padding: 25px;
+    font-weight: 600;
+    background-color: var(--main-color);
+    color: #fff;
+    text-align: center;
+}
+
+.board__nav > a.board__selected{
+	background-color: var(--main-btn-color);
+	color: var(--main-color);
+}
+
+
+.board__box{
+	margin-top: 15px;
+	border-bottom: 1px solid var(--border-color);
+}
+.board__box:last-child{
+	margin-bottom: 15px;
+	border: none;
+}
+
+
+.board__box > a{
+	display: flex;
+	justify-content: flex-start;
+	color:#000;
+}
+
+
+.board__book-img > img{
+	width: 100px;
+	object-fit: cover;
+	box-shadow: 5px 5px 5px var(--main-blur-color);
+	box-sizing: content-box;
+}
+
+.board__contents{
+	width: 100%;
+	padding:15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+
+.board__first{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid var(--border-color);
+	padding-bottom: 15px;
+}
+
+.board__first> p:first-child{
+	font-size: 25px;
+	font-weight: 600;
+	color : var(--main-btn-color);
+}
+
+.board__middle{
+	margin-top: 15px;
+}
+.board__middle>p:first-child{
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--main-color);
+	margin-bottom: 15px;
+}
+
+.board__last{
+	font-weight: 550;
+}
+
+.board__last> .board__writer{
+	margin-bottom: 5px;
+}
+.board__title{
+	font-size: 30px;
+}
+
+.board__detail--nov{
+	display: flex;
+	
+}
+.board__info{
+	margin: 30px;
+	
+	
+}
+.board__underbar{
+	display: flex;
+}
+.board__status{
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 5px;
+	background-color: var(--main-btn-color);
+	line-height: 30px;
+	margin: 10px;
+}
+.board__status2{
+	color: white;
+	width: 50px;
+	padding: 5px 10px;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 5px;
+	background-color: var(--main-btn-color);
+	line-height: 30px;
+	margin: 10px;
+}
+
+
+.board__info >p{
+	margin: 5px 0px 0px 0px;
+}
+
+.board__write--title, .board__write--artist{
+	display: flex;
+	margin: 10px;
+}
+
+.board__modify--input{
+	width: 1140px;
+	margin: 0px 10px 10px 15px;
+}
+.board__textarea{
+	
+	margin : 0px 10px 10px 15px;
+	
+}
+.board__search{
+	display: flex;
+	margin: 30px 300px 10px 400px;
+}
+.board__search2{
+ 	width: 300px;
+ 	height: 40px;
+ 	margin: 10px;
+ }
+.board__status>a{
+	color: white;
+}
+.board__search--title2{
+	width: 100px;
+	margin: 0px 0px 0px 0px;
+	
+}
+.board__search--title{
+	width: 500px;
+	margin: 10px;
+	display: flex;
+	
+	
+}
+
+

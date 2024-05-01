@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+/*
+	css 적용 규칙,
+	Bolck이름__Element이름
+	ex)form class = "freeBoard"
+		input class = "freeBoard__name"
+		input class = "freeBoard__pwd"
+	
+	Block 만 적용하여 선택자를 이용해도 가능합니다.
+	ex)
+		form class = "freeBoard"
+		 input
+		 input
+		
+		.freeBoard >input:last-child{
+			css 내용
+		}
+*/
+
+
+/* components - 페이지의 일부분에 들어가는 css를 작성할 때 아래에 import 합니다.
+	ex) header - footer
+*/
+
+
+/* screens - 각 페이지에 들어가는 css를 작성할 때 아래에 import 합니다
+	ex) 리스트, 상세화면, 수정 등등
+ */
+/*components*/
+@import "./components/header.css";
+@import "./components/footer.css";
+
+/*screens*/
+
+@import "./screens/event.css";
+@import "./screens/main.css";
+@import "./screens/novel.css";
+@import "./screens/board.css";
+@import "./screens/myPage.css";
+@import "./screens/login.css";
+@import "./screens/join.css";
+@import "./screens/notice.css";
+@import "./screens/inquiry.css";
+@import "./screens/freeBoard.css";
+@import "./screens/comment.css";
+
+/* 이 아래는 모든 곳에서 공통되는 css를 적용합니다.
+	ex) a 태그, font-size, font-family 등등
+*/
+
+*{
+	font-family: "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-optical-sizing: auto;
+	box-sizing: border-box;
+	object-fit: cover;
+	color: var(--text-title-color);
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+}
+
+:root{
+	--main-color: #82b4f0; /* 메인색 */
+	--main-btn-color : #154783; /* 버튼 메인색*/
+	--main-blur-color : #d4e7fd; /* 연한 메인색 */
+	--main-location-color : #4586d4; /*이동 링크 메인색*/
+	--text-title-color : #333333; /* 텍스트 진한색 (글 제목) */
+	--text-cont-color : #898989; /* 텍스트 보통색 (글 내용) */
+	--text-sub-color : #b0b0b0; /* 텍스트 연한색 */ 
+	--border-color : #eeeeee; /* 보더색상 */
+	--main-width: 1200px; /*body 사이즈*/
+}
+
+
+.unCssTable{
+/*	border-collapse: separate; 
+    border-spacing: 2px;*/
+    border-color: var(--border-color);
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    margin: 25px auto;
+}
+.unCssTable tr {
+	border-bottom: 1px solid var(--text-title-color);
+}
+.unCssTable tr:first-of-type {
+	background-color: var(--text-sub-color);
+}
+.unCssTable td {
+	padding: .5rem 1rem;
+	border: 1px solid var(--border-color);
+}
+
+
+
+.adminNav {
+	width: 1200px;
+	
+	display: flex;
+	margin-bottom: 30px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid var(--main-color);
+}
+.adminNav li {
+	border-right: 1px solid var(--text-cont-color);
+}
+.adminNav li:last-of-type{
+	border-right: none;
+}
+.adminNav li a {
+	font-size: 18px;
+	padding: 0 1.5rem;
+	color: var(--text-cont-color);
+	line-height: 1rem;
+}
+.adminNav li.active a {
+	color: var(--main-btn-color);
+	font-weight: 700;
+}
+
+.adminNav{
+	gap: .5rem;
+	font-weight: 500;
+	padding-top: 47px;
+
+}
+
+.adminNav{
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    width:100%;
+    font-size: .9rem;
+    line-height:20px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.adminNav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	justify-content: center;
+}
+
+.paging{
+	margin: 15px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.paging > a {
+	border: 1px solid var(--main-color);
+	padding: 15px;
+	color: var(--main-color);
+}
+
+.paging > .current {
+	background-color: var(--main-btn-color);
+	border: 1px solid var(--main-btn-color);
+	color: #fff;
+	padding: 15px;
+	font-weight: 600;
+}
