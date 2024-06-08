@@ -46,9 +46,3 @@
 - Main 브랜치에 바로 적용하는 것이 아닌, 통합 후 새로운 Branch를 만들어 PR을 받고 충돌을 방지 및 해결 하는 방식으로 진행했습니다.
 
 
-## Code Convention
-
-||Class|Method|Variable|DB|
-|:-:|:-:|:-:|:-:|:-:|
-|Case|Pascal Case|camel Case|camel Case|snake_case
-|Rule|명사|동사+명사|형용사+명사 or 명사|테이블명_명사|
